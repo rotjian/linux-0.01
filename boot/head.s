@@ -8,7 +8,7 @@
 .text
 .globl _idt,_gdt,_pg_dir
 _pg_dir:
-startup_32:
+startup_32:  # provisional Page Tables
 	movl $0x10,%eax
 	mov %ax,%ds
 	mov %ax,%es
